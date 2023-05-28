@@ -23,3 +23,8 @@ This research is highly relevant to network science, as it involves the analysis
 
 ### Methodologies:
 The methodologies we plan to use for this project include data normalization, similarity measures, graph theory, and network analysis techniques such as community detection and centrality measures. We will use Python programming language along with popular data science and network analysis libraries such as Pandas, NumPy, NetworkX, and Plotly to carry out the analysis. We will also use time series analysis techniques to examine how the network changes and evolves over time.
+
+### References:
+- Prediction of product success: Explaining song popularity by audio ... (n.d.). RetrievedApril 3, 2023, from https://essay.utwente.nl/75422/1/NIJKAMP_BA_IBA.pdf 
+- Musical influence network analysis and rank of sample-based music. (n.d.). RetrievedApril 3, 2023, from https://www.researchgate.net/publication/220723768_Musical_Influence_Network_Analysis_and_Rank_of_Sample-Based_Music
+- Mavani, V. (2021, December 17). Spotify dataset. Kaggle. Retrieved April 3, 2023, fromhttps://www.kaggle.com/datasets/vatsalmavani/spotify-dataset
