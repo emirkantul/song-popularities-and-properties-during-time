@@ -1,6 +1,10 @@
 # song-popularities-and-properties-during-time
 Analyzing Song Popularity and Properties During Time with Network Science
 
+## For VSCODE
+- Install poetry https://python-poetry.org/docs/
+- run `poetry install` on main folder (folder containing this README.md)
+- Now you can work with NetworkAnalysis.ipynb 
 ### Domain of Interest:
 The domain of interest for this project is the analysis of music data, specifically using network science to understand the relationships between songs based on their musical properties, and how these relationships have changed over time.
 

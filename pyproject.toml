@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "song-popularities-and-properties-during-time"
+version = "0.1.0"
+description = ""
+authors = ["Emir Kantul <emirkantul@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ipykernel = "^6.23.1"
+numpy = "^1.24.3"
+pandas = "^2.0.1"
+seaborn = "^0.12.2"
+matplotlib = "^3.7.1"
+networkx = "^3.1"
+scikit-learn = "^1.2.2"
+python-louvain = "^0.16"
+notebook = "^6.5.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

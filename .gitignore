@@ -1,5 +1,10 @@
 # User Defined
 .DS_Store
+dataset/*.csv
+gephi/*.gexf
+gephi_modified/*.gephi
+metrics/*.json
+Archive.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
