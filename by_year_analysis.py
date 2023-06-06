@@ -7,7 +7,7 @@ from community import community_louvain
 
 import threading
 
-max_threads = 8
+max_threads = 4
 
 # Create a semaphore with the maximum number of threads allowed
 thread_limiter = threading.Semaphore(max_threads)
@@ -41,10 +41,8 @@ def generate_network_by_year(
         for feature in features:
             song_network.nodes[i][feature] = row[feature]
 
-    # Remove isolated nodes
+    # isolated nodes
     isolated_nodes = [n for n, d in song_network.degree() if d == 0]
-    song_network.remove_nodes_from(isolated_nodes)
-    df.drop(isolated_nodes, inplace=True)
 
     # Cluster nodes using the Louvain method
     partition = community_louvain.best_partition(song_network)
@@ -64,7 +62,7 @@ def generate_network_by_year(
     metrics = {
         "year": int(year),
         "path": gexf_file_path,
-        "number_of_removed_isolated_nodes": len(isolated_nodes),
+        "number_of_isolated_nodes": len(isolated_nodes),
         "similarity_threshold": similarity_threshold,
         "num_nodes": int(song_network.number_of_nodes()),
         "num_edges": int(song_network.number_of_edges()),
